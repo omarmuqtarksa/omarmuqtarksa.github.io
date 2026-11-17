@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omar Muqtar K | Talent Acquisition Manager & Headhunter</title>
+<meta name="description" content="Talent Acquisition Manager and headhunter with 7+ years across India, Europe, USA, UAE, China and Saudi Arabia. 479 offers, 412 joiners.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0f1b2d; --ink-2:#3a4a60; --muted:#6b7a90; --line:#e3e8ef;
+    --bg:#f7f5f0; --card:#ffffff; --accent:#c2410c; --accent-soft:#fdeee5; --navy:#13294b;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+
+  nav{position:sticky;top:0;background:rgba(247,245,240,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  nav .logo{font-family:'Fraunces',serif;font-weight:700;font-size:20px;text-decoration:none}
+  nav ul{display:flex;gap:24px;list-style:none}
+  nav ul a{text-decoration:none;font-size:14px;color:var(--ink-2);font-weight:500}
+  nav ul a:hover{color:var(--accent)}
+  @media(max-width:700px){nav ul{display:none}}
+
+  header{padding:80px 0 56px}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:6px 12px;border-radius:99px;margin-bottom:20px}
+  h1{font-family:'Fraunces',serif;font-size:clamp(40px,7vw,68px);line-height:1.05;color:var(--navy)}
+  .role{font-size:clamp(18px,2.4vw,22px);color:var(--ink-2);margin:16px 0 8px;font-weight:500}
+  .loc{color:var(--muted);font-size:15px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;font-size:15px;text-decoration:none;transition:transform .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--navy);color:#fff}
+  .btn-ghost{border:1.5px solid var(--navy);color:var(--navy)}
+
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .stat b{display:block;font-family:'Fraunces',serif;font-size:38px;color:var(--accent);line-height:1}
+  .stat span{font-size:14px;color:var(--ink-2);display:block;margin-top:8px}
+  @media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  h2{font-family:'Fraunces',serif;font-size:32px;color:var(--navy);margin-bottom:28px}
+  .lead{font-size:18px;color:var(--ink-2);max-width:780px}
+
+  .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:800px){.grid-2,.grid-3{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .card h3{font-size:17px;margin-bottom:8px;color:var(--navy)}
+  .card p{font-size:15px;color:var(--ink-2)}
+  .card .num{font-family:'Fraunces',serif;font-size:28px;color:var(--accent);font-weight:700}
+
+  .job{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--line)}
+  .job:last-child{border-bottom:none}
+  .job .when{font-size:14px;color:var(--muted);font-weight:500}
+  .job .where{font-size:13px;color:var(--accent);font-weight:600;margin-top:4px}
+  .job h3{font-size:19px;color:var(--navy)}
+  .job .co{font-weight:600;color:var(--ink-2);margin-bottom:10px}
+  .job ul{padding-left:18px;color:var(--ink-2);font-size:15px}
+  .job li{margin-bottom:6px}
+  @media(max-width:700px){.job{grid-template-columns:1fr;gap:8px}}
+
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:13px;font-weight:500;padding:6px 12px;border-radius:99px;background:var(--card);border:1px solid var(--line);color:var(--ink-2)}
+  .tag.hot{background:var(--accent-soft);border-color:#f6c9ad;color:var(--accent)}
+  .group{margin-bottom:28px}
+  .group h3{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px}
+
+  .contact{background:var(--navy);color:#fff;border-radius:20px;padding:48px;text-align:center}
+  .contact h2{color:#fff}
+  .contact p{color:#c8d3e3;margin-bottom:28px}
+  .contact .btn-primary{background:var(--accent)}
+  .contact .btn-ghost{border-color:#fff;color:#fff}
+  .contact .cta{justify-content:center}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:32px 0}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">Omar Muqtar K</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">Open to relocate anywhere</span>
+    <h1>Omar Muqtar K</h1>
+    <p class="role">Talent Acquisition Manager · Headhunter · Workforce Planning</p>
+    <p class="loc">Bangalore, India · Currently in Riyadh, Saudi Arabia</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:omarmuqtar.ksa@gmail.com">Email me</a>
+      <a class="btn btn-ghost" href="YOUR-LINKEDIN-URL" target="_blank">LinkedIn</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>7+</b><span>Years in full lifecycle recruitment</span></div>
+      <div class="stat"><b>479</b><span>Offers delivered</span></div>
+      <div class="stat"><b>412</b><span>Joiners delivered</span></div>
+      <div class="stat"><b>6</b><span>Regions: India, Europe, USA, UAE, China, KSA</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="lead">I'm a Talent Acquisition Manager and headhunter who closes hard-to-fill technical roles. Across Infosys BPM, Airbus India and Ascent HR, I've hired for SAP, full stack, cloud, cybersecurity and AI/ML, and I currently lead RPO hiring across Saudi Arabia, China and India at Al Ghaith Investment Group. My work combines passive and active sourcing, IIT and IIM campus hiring, and strategic workforce planning backed by recruitment analytics.</p>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="wrap">
+    <h2>Impact</h2>
+    <div class="grid-3">
+      <div class="card"><div class="num">75% → 25%</div><h3>Vendor dependency cut</h3><p>Redesigned recruitment KPIs at Infosys BPM to move hiring in-house, improving recruitment efficiency and experience.</p></div>
+      <div class="card"><div class="num">396 / 342</div><h3>Offers / joiners at Infosys BPM</h3><p>Single point of contact across 4 verticals, with 100% compliance and on-time delivery.</p></div>
+      <div class="card"><div class="num">EV-TA</div><h3>Custom ATS co-designed</h3><p>Automated the full recruitment process, replacing Kenexa BrassRing.</p></div>
+      <div class="card"><div class="num">92</div><h3>Recruiters managed</h3><p>16 internal recruiters and 76+ vendor recruiters, plus 12 cross-regional walk-in teams.</p></div>
+      <div class="card"><div class="num">150+</div><h3>Stakeholders partnered</h3><p>HODs, group managers, hiring managers and directors across time zones, and 120+ client accounts.</p></div>
+      <div class="card"><div class="num">Niche</div><h3>Ageing roles closed</h3><p>Agile Coach, SAP CFIN and SAP ABAP/UI5 Fiori, through targeted headhunting and pipeline building.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div><div class="when">Feb 2026 – Present</div><div class="where">KSA · China · India</div></div>
+      <div>
+        <h3>Talent Acquisition Manager</h3>
+        <div class="co">Al Ghaith Investment Group, Riyadh</div>
+        <ul>
+          <li>Lead RPO hiring from requisition to onboarding using Odoo, Naukri Gulf and LinkedIn Recruiter.</li>
+          <li>Support Etimad tender proposals and audit payroll, insurance, Iqama, EOSB and final settlements.</li>
+          <li>Manage Saudi government portals: Qiwa, Mudad, GOSI, Muqeem, Absher and Balady.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div><div class="when">Sep 2025 – Jan 2026</div><div class="where">India · Europe</div></div>
+      <div>
+        <h3>Key Account Manager, Global TA Operations</h3>
+        <div class="co">Airbus India (via RGBSI), Bangalore</div>
+        <ul>
+          <li>Hired across Digital Engineering, Digital Operations and Defence &amp; Space: 29 offers, 24 joiners.</li>
+          <li>Led a team of 5 recruiters and partnered with 3 HODs, 12+ group managers and 30+ hiring managers.</li>
+          <li>Closed ageing SAP CFIN roles and built a contingent workforce pipeline for SAP ABAP/UI5 Fiori.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div><div class="when">Jan 2023 – Sep 2025</div><div class="where">India · USA</div></div>
+      <div>
+        <h3>Process Specialist, Global TA &amp; Operations</h3>
+        <div class="co">Infosys BPM Limited, Bangalore</div>
+        <ul>
+          <li>Delivered 396 offers and 342 joiners across Infosys BPM, Infosys Limited, McCamish and Finacle (EdgeVerve).</li>
+          <li>Cut vendor dependency from 75% to 25% as primary vendor SPOC.</li>
+          <li>Ran strategic workforce planning: demand, supply, gap and attrition analysis, and headcount forecasting.</li>
+          <li>Used HireVue, Eightfold AI and WeCP to assess technical talent; recruited from IIT and IIM campuses.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div><div class="when">Jun 2022 – Jan 2023</div><div class="where">PAN India</div></div>
+      <div>
+        <h3>Senior Executive, Talent Acquisition</h3>
+        <div class="co">Ascent HR Consulting Services, Bangalore</div>
+        <ul>
+          <li>54 offers and 46 joiners across C2H, RPO and internal hiring.</li>
+          <li>Managed accounts for Capgemini, TCS, Infosys, Wipro, Flipkart, CRED, Happiest Minds and LTI Mindtree.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="job">
+      <div><div class="when">Jun 2019 – May 2022</div><div class="where">PAN India</div></div>
+      <div>
+        <h3>HR Associate, Talent Acquisition</h3>
+        <div class="co">SAMS Engineering &amp; IT Consulting, Coimbatore</div>
+        <ul>
+          <li>IT and non-IT hiring for internal, B2B and Tamil Nadu government (B2G) clients, plus HR operations.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <h2>Expertise</h2>
+
+    <div class="group">
+      <h3>Roles I hire for</h3>
+      <div class="tags">
+        <span class="tag hot">SAP CFIN</span><span class="tag hot">SAP ABAP/UI5 Fiori</span><span class="tag hot">S/4HANA</span>
+        <span class="tag hot">Agile Coach</span><span class="tag hot">AI/ML</span>
+        <span class="tag">SAP FICO</span><span class="tag">SAP SD/MM/PP</span><span class="tag">SAP BASIS</span><span class="tag">BW4HANA/SAC</span>
+        <span class="tag">Full Stack MEAN/MERN</span><span class="tag">Java</span><span class="tag">Python</span><span class="tag">.NET</span><span class="tag">C++</span><span class="tag">Node.js</span>
+        <span class="tag">Cloud</span><span class="tag">DevOps</span><span class="tag">Cybersecurity</span><span class="tag">Data Migration Architect</span>
+        <span class="tag">Scrum Master</span><span class="tag">Service Delivery Manager</span><span class="tag">F&amp;A (PTP/OTC/RTR)</span><span class="tag">HR &amp; TA</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <h3>ATS, HRIS &amp; AI tools</h3>
+      <div class="tags">
+        <span class="tag">SAP SuccessFactors</span><span class="tag">Workday Recruiting</span><span class="tag">Kenexa BrassRing</span><span class="tag">EdgeVerve EV-TA</span>
+        <span class="tag">Odoo</span><span class="tag">Keka</span><span class="tag">GreytHR</span><span class="tag">HireVue AI</span><span class="tag">Eightfold AI</span><span class="tag">WeCP AI</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <h3>Sourcing</h3>
+      <div class="tags">
+        <span class="tag">LinkedIn Recruiter</span><span class="tag">Boolean &amp; X-Ray search</span><span class="tag">Naukri</span><span class="tag">Naukri Gulf</span>
+        <span class="tag">Monster/Foundit</span><span class="tag">IIT &amp; IIM campus hiring</span><span class="tag">Referrals &amp; IJP</span><span class="tag">Walk-in &amp; bulk hiring</span>
+      </div>
+    </div>
+
+    <div class="group">
+      <h3>Workforce planning &amp; analytics</h3>
+      <div class="tags">
+        <span class="tag">Strategic workforce planning</span><span class="tag">Contingent workforce planning</span><span class="tag">Headcount forecasting</span>
+        <span class="tag">Gap &amp; attrition analysis</span><span class="tag">MI/MIS dashboards</span><span class="tag">TtH · TtF · QoH · O2J</span><span class="tag">Recruiter scorecards</span>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:12px">
+      <div class="card"><h3>Education</h3><p>B.Tech, Anna University (2015–2019)</p></div>
+      <div class="card"><h3>Certifications</h3><p>SAP SuccessFactors: Talent Management · AI-aware Talent Acquisition · Generative AI Landscape · Root Cause Analysis, plus 13 more from Infosys</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="border-top:none">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Let's talk</h2>
+      <p>Open to Talent Acquisition leadership roles. Happy to relocate anywhere.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:omarmuqtar.ksa@gmail.com">omarmuqtar.ksa@gmail.com</a>
+        <a class="btn btn-ghost" href="YOUR-LINKEDIN-URL" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Omar Muqtar K</footer>
+</body>
+</html>
